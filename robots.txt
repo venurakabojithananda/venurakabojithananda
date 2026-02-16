@@ -4,52 +4,58 @@
 # Allow all search engines to crawl everything
 User-agent: *
 Allow: /
+Disallow: 
 
-# Sitemap location
+# Tell search engines where to find your sitemap
 Sitemap: https://venurakabojithananda.github.io/sitemap.xml
 
-# Crawl delay for gentle crawling (be nice to servers)
-Crawl-delay: 1
-
-# Specific rules for different bots
+# Specific rules for different search engines
 User-agent: Googlebot
 Allow: /
 Allow: /*.pdf$
 Allow: /*.jpg$
 Allow: /*.png$
-Disallow: /*?utm_  # Don't crawl UTM parameters
+Allow: /$
 
 User-agent: Googlebot-Image
 Allow: /*.jpg$
 Allow: /*.png$
 Allow: /*.gif$
+Allow: /me.jpg
 
 User-agent: Googlebot-Video
+Allow: /
 Allow: /*youtube*
+Allow: /*embed*
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 2
+Crawl-delay: 1
 
 User-agent: Slurp  # Yahoo
 Allow: /
-Crawl-delay: 2
+Crawl-delay: 1
 
-User-agent: Baiduspider  # Chinese search engine
+User-agent: Baiduspider  # China
 Allow: /
 Crawl-delay: 2
 
-User-agent: Yandex  # Russian search engine
+User-agent: Yandex  # Russia
 Allow: /
 Crawl-delay: 2
 
-# Host directive (helps with canonical)
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# Host directive (helps with canonical URLs)
 Host: https://venurakabojithananda.github.io
 
-# Important paths that should be crawled
+# Crawl delay for all other bots
+Crawl-delay: 1
+
+# Important pages that should be prioritized
 Allow: /$
 Allow: /index.html$
 Allow: /me.jpg$
 Allow: /*.pdf$
-
-# Block nothing important - your site is fully public!
