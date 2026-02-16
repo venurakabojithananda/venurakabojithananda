@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Venuraka Bojith Ananda · English Literature & Language Online Classes Sri Lanka</title>
+  <meta name="description" content="O/L English Literature, O/L English, A/L General English by Venuraka Bojith Ananda (Colombo, Sri Lanka). Individual & group Zoom classes. Fast-track syllabus, free paper discussions, and notes download.">
+  <meta name="keywords" content="Venuraka Bojith Ananda, M.G. Venuraka Bojith Ananda, Venuraka Ananda, English tutor Sri Lanka, Colombo English classes, O/L Literature, O/L English, A/L General English, online Zoom classes, Aquinas College, English notes download, complete syllabus coverage">
+  <meta name="author" content="Venuraka Bojith Ananda">
+  <meta name="geo.region" content="LK">
+  <meta name="geo.placename" content="Colombo, Sri Lanka">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://venurakabojithananda.github.io/">
+  <meta property="og:title" content="Venuraka Bojith Ananda · English Online Classes">
+  <meta property="og:description" content="O/L Lit, O/L English, A/L General English. Colombo-based, Zoom online. Free notes. Complete syllabus coverage.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #030b16;
+      background: radial-gradient(circle at 30% 40%, #0e1e30, #01070f 95%);
+      font-family: 'Inter', sans-serif;
+      color: #ecf3fa;
+      line-height: 1.3;
+      padding-bottom: 70px;
+      animation: fadeIn 0.7s ease;
+    }
+    @keyframes fadeIn { 0%{opacity:0} 100%{opacity:1} }
+    .container {
+      max-width: 600px; margin: 0 auto; padding: 8px 12px 20px;
+      position: relative; z-index: 10;
+    }
+    .card, .section-card, .bio-card, .milestone-card {
+      margin-bottom: 16px;
+    }
+    .card, .section-card {
+      background: rgba(7, 18, 32, 0.9);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 24px;
+      padding: 16px 16px;
+      border: 0.5px solid rgba(100, 170, 230, 0.2);
+      box-shadow: 0 8px 16px -12px #000000;
+      position: relative;
+    }
+    .profile-row {
+      display: flex; align-items: center; gap: 14px; flex-wrap: nowrap;
+    }
+    .avatar-frame {
+      width: 76px; height: 76px; border-radius: 44% 56% 38% 62% / 52% 48% 52% 48%;
+      object-fit: cover; border: 2.5px solid #c97eff; box-shadow: 0 10px 22px -8px #3a245a;
+      flex-shrink: 0;
+    }
+    .name-section h1 {
+      font-size: 1.55rem; font-weight: 800; line-height: 1.1;
+      background: linear-gradient(145deg, #ffffff, #ece0ff, #ffe2f0);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      white-space: nowrap;
+    }
+    .badge-multi {
+      background: #1c2742; border: 1px solid #b296ff; color: #f3ecff;
+      padding: 3px 14px; border-radius: 60px; font-size: 0.65rem; font-weight: 600;
+      display: inline-block; margin-top: 5px;
+    }
+    .tag-cloud {
+      display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px;
+    }
+    .tag {
+      background: #20334a; color: #ecf3ff; padding: 3px 12px; border-radius: 50px;
+      font-size: 0.65rem; font-weight: 600; border: 0.5px solid #679fe0;
+    }
+    .social-under-name {
+      display: flex; align-items: center; gap: 12px;
+      margin-top: 12px; padding-top: 8px; border-top: 1px solid #306885;
+    }
+    .social-icon-circle {
+      width: 32px; height: 32px; border-radius: 50%; background: #1f405a;
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; color: white; text-decoration: none; transition: 0.15s;
+      border: 1px solid #7fb6d4;
+    }
+    .social-icon-circle:hover { transform: scale(1.08); background: #2e5c7c; }
+    .wa-social { background: #25D366; }
+    .yt-social { background: #FF0000; }
+    .fb-social { background: #1877F2; }
+    .tt-social { background: #000000; }
+    
+    .bio-card {
+      background: linear-gradient(145deg, #0d1f2e, #102433);
+      border-left: 8px solid #ff99bb; border-right: 2px solid #5fc0d0;
+      padding: 16px 18px; border-radius: 32px 16px 32px 16px;
+      color: #ffffff; font-size: 0.96rem; font-weight: 500;
+    }
+    /* FIX 01: closing quotation mark */
+    .bio-card i.fa-quote-left + span::after { content: '"'; font-style: normal; }
+    .edu-block {
+      background: #122b3c; border-left: 6px solid; 
+      border-image: linear-gradient(180deg, #c08eff, #3fc2c2) 1;
+      padding: 14px; border-radius: 20px; margin-bottom: 12px;
+    }
+    .edu-block h3 { font-size: 1.05rem; font-weight: 650; color: #ffe6b3; margin-bottom: 4px; }
+    .top-badge-custom {
+      background: #392f60; color: #f5e5ff; padding: 2px 14px; border-radius: 60px;
+      font-size: 0.6rem; font-weight: 700; display: inline-block; margin-top: 6px;
+      border: 1px solid #c7abff;
+    }
+    .milestone-card {
+      background: #0f2535; background: linear-gradient(145deg, #163145, #0b202f);
+      border-radius: 28px; padding: 16px; border-bottom: 4px solid #4ab0c0;
+    }
+    .carousel-container { margin: 8px 0 10px; }
+    .carousel-header-row {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 10px; padding: 0 2px;
+    }
+    .section-tabs {
+      display: flex; gap: 4px;
+    }
+    .section-tab {
+      background: transparent; border: none; color: #b8d6f0; font-weight: 600;
+      font-size: 0.8rem; padding: 5px 14px; border-radius: 40px; cursor: pointer;
+      transition: 0.15s; border: 1px solid transparent;
+    }
+    .section-tab.active {
+      background: #2f5275; color: white; border-color: #c7a6ff; box-shadow: 0 0 8px #b18aff;
+    }
+    .caro-dot-container {
+      display: flex; gap: 8px;
+    }
+    .caro-dot {
+      width: 28px; height: 4px; border-radius: 8px; background: #3e6075;
+      border: none; cursor: pointer; opacity: 0.6; transition: 0.2s;
+    }
+    /* FIX 05: default buttons visible (not invisible) – they now have visible background */
+    .caro-dot { background: #5f8eb0; opacity: 0.8; } 
+    .caro-dot.active { background: #edccff; opacity: 1; width: 40px; }
+    
+    .section-card { display: none; }
+    .section-card.active { display: block; animation: slide 0.2s; }
+    @keyframes slide { 0%{opacity:0.5; transform:translateY(3px);} 100%{opacity:1; transform:translateY(0);} }
+
+    /* FIX 02 & 04: colored class cards + universal syllabus items */
+    .class-universal-row {
+      background: #123e55; padding: 12px 18px; border-radius: 30px;
+      margin: 16px 0 10px; border: 1px solid #84cfff;
+      display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+    }
+    .univ-badge {
+      background: #2a627a; padding: 8px 18px; border-radius: 40px;
+      font-weight: 600; font-size: 0.9rem; border-left: 4px solid #ffc107;
+    }
+    .class-item {
+      display: flex; align-items: center; gap: 12px; padding: 14px 0;
+      border-bottom: 1px solid #2b5e7a;
+    }
+    .class-item:last-child { border-bottom: none; }
+    .class-icon { width: 32px; font-size: 1.3rem; text-align: center; }
+    /* class-specific colors */
+    .class-item[data-class="ol-lit"] .class-icon { color: #ffb47b; }
+    .class-item[data-class="ol-eng"] .class-icon { color: #a0e07f; }
+    .class-item[data-class="al-eng"] .class-icon { color: #ff99cc; }
+    .class-item[data-class="ol-lit"] strong { color: #ffb47b; }
+    .class-item[data-class="ol-eng"] strong { color: #b0f2a0; }
+    .class-item[data-class="al-eng"] strong { color: #ffb6e0; }
+
+    .video-grid { display: flex; flex-direction: column; gap: 16px; }
+    .video-item {
+      background: #102536; border-radius: 24px; padding: 14px;
+      border: 1px solid #3f85a8; box-shadow: 0 4px 0 #124b63;
+      transition: 0.1s; cursor: pointer;
+    }
+    .video-item:active { transform: translateY(2px); box-shadow: 0 1px 0 #124b63; }
+    .vid-frame {
+      width: 100%; aspect-ratio: 16/9; border-radius: 20px; overflow: hidden;
+      border: 2px solid #1f6d91; background: #031a24; pointer-events: none;
+    }
+    .vid-frame iframe { width:100%; height:100%; border:0; pointer-events:none; }
+    .vid-stats {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-top: 12px; width: 100%;
+    }
+    .enlarge-btn {
+      background: #1f425b; border: 1.5px solid #4fb9e0; color: white;
+      padding: 6px 18px; border-radius: 60px; font-weight: 600; font-size: 0.8rem;
+      display: inline-flex; align-items: center; gap: 6px; pointer-events: none;
+    }
+    .views-count {
+      color: #c2e2ff; font-weight: 500; margin-right: 6px; font-size:0.85rem;
+    }
+    .category-badge {
+      background: #266684; padding: 6px 18px; border-radius: 60px; font-size:0.75rem;
+      color: white; font-weight: 600; white-space: nowrap; border: 1px solid #7bc3e0;
+    }
+    .notes-list { display: flex; flex-direction: column; gap: 10px; }
+    .note-item {
+      background: #163b4a; border-radius: 22px; padding: 12px 16px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .note-item a {
+      margin-left: auto; background: #1f5e7c; padding: 6px 20px; border-radius: 40px;
+      color: white; text-decoration: none; border: 1px solid #7ac4d8; font-size:0.8rem;
+      display: inline-block; transition: 0.1s;
+    }
+    .note-item a:hover { background: #2d789b; }
+    .note-item a:active { transform: scale(0.97); }
+    
+    .wa-float-only {
+      position: fixed; bottom: 16px; right: 14px; z-index: 9999;
+      display: flex; flex-direction: column; align-items: flex-end;
+      pointer-events: none;
+    }
+    .wa-bubble {
+      background: white; backdrop-filter: blur(12px); border-radius: 28px 28px 8px 28px;
+      padding: 8px 20px; margin-bottom: 10px; color: #0a1e28; font-size: 0.95rem;
+      font-weight: 800; box-shadow: 0 12px 28px rgba(0,0,0,0.5); pointer-events: none;
+      border: 1px solid #25D366; line-height: 1.3;
+    }
+    .typewriter-text { color: #0c1f2c; font-weight: 800; display: inline-block; }
+    .typewriter-text::after { content: "|"; color: #1a8c8c; animation: blink 0.8s infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    
+    .wa-float-only .wa-button {
+      width: 60px; height: 60px; background: #25D366; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; font-size: 2.5rem;
+      color: white; box-shadow: 0 8px 18px #075e54; pointer-events: auto;
+      text-decoration: none; position: relative; animation: float 3s infinite;
+    }
+    .wa-float-only .wa-button i { font-size: 2.5rem; line-height: 1; }
+    .wa-float-only .wa-button::before,
+    .wa-float-only .wa-button::after {
+      content: ""; position: absolute; width: 100%; height: 100%;
+      background: #25D366; border-radius: 50%; opacity: 0.5; z-index: -1;
+      animation: ripple 1.8s infinite ease-out;
+    }
+    .wa-float-only .wa-button::before { animation-delay: 0.4s; }
+    .wa-float-only .wa-button::after { animation-delay: 0.9s; }
+    @keyframes ripple { 0% { transform: scale(1); opacity: 0.6; } 100% { transform: scale(2.2); opacity: 0; } }
+    @keyframes float { 0%{transform:translateY(0);} 50%{transform:translateY(-5px);} 100%{transform:translateY(0);} }
+
+    .modal {
+      display: none; position: fixed; top:0; left:0; width:100%; height:100%;
+      background: rgba(2, 10, 20, 0.98); backdrop-filter: blur(20px); z-index: 99999;
+      align-items: center; justify-content: center;
+    }
+    .modal-container { width: 94%; max-width: 880px; aspect-ratio:16/9; }
+    .modal iframe { width:100%; height:100%; border-radius:20px; box-shadow:0 0 40px #2f6f9f; }
+    .modal-close {
+      position: absolute; top: 14px; right: 20px; color: white; font-size: 40px;
+      background: #1e3c52; padding: 0 20px; border-radius: 50px; cursor: pointer;
+      border: 2px solid #5ac8c8; line-height: 1.1;
+    }
+    .footer {
+      text-align: center; margin-top: 30px; color: #b8ddf5; font-size: 0.7rem;
+      border-top: 1px solid #2f6f8f; padding-top: 16px; letter-spacing: 0.2px;
+    }
+    @media (max-width:480px) {
+      .profile-row { flex-wrap: wrap; gap: 8px; }
+      .name-section h1 { font-size: 1.35rem; white-space: normal; }
+      .avatar-frame { width: 70px; height: 70px; }
+      .tag { font-size: 0.6rem; padding: 2px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="profile-row">
+        <img src="me.jpg" alt="Venuraka Ananda" class="avatar-frame" onerror="this.src='https://via.placeholder.com/400/102436/d0b0ff?text=V'">
+        <div class="name-section">
+          <h1>Venuraka Bojith Ananda</h1>
+          <span class="badge-multi"><i class="fas fa-location-dot"></i> Sri Lanka · 22 · Single</span>
+          <div class="tag-cloud">
+            <span class="tag"><i class="fas fa-graduation-cap"></i> English Tutor</span>
+            <span class="tag"><i class="fas fa-bolt"></i> Fast-track</span>
+            <span class="tag"><i class="fas fa-video"></i> Zoom Online</span>
+          </div>
+        </div>
+      </div>
+      <div class="social-under-name">
+        <a href="https://wa.me/94724600493?text=Hello%20Venuraka%2C%20interested%20in%20classes" class="social-icon-circle wa-social" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/@venurakabojithananda" class="social-icon-circle yt-social" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com/venurakabojithananda" class="social-icon-circle fb-social" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@venurakabojithananda" class="social-icon-circle tt-social" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <span style="color:#b0dcff; font-size:0.65rem;">@venurakabojithananda</span>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <i class="fas fa-quote-left" style="font-size: 1.3rem;"></i>
+      <span> I don't focus on earning money – I focus on teaching students properly. I believe education is a right, not a privilege and I look forward to change the tuition industry of Sri Lanka.</span>
+    </div>
+
+    <div class="card">
+      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+        <i class="fas fa-university" style="font-size: 1.5rem; color: #b89eff;"></i>
+        <span style="font-size: 1.35rem; font-weight: 700;">Education</span>
+      </div>
+      <div class="edu-block">
+        <h3>B.Ed. Hons in English</h3>
+        <p style="color: #bde1ff; font-size: 0.82rem;">Aquinas College of Higher Studies · Reading (2025–2030)</p>
+      </div>
+      <div class="edu-block">
+        <h3>Diploma in English Language & Literature</h3>
+        <p style="color: #c2e0ff; font-size: 0.82rem;">Aquinas College of Higher Studies · 2025 batch</p>
+        <span class="top-badge-custom"><i class="fas fa-star"></i> Top of my batch</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+        <i class="fas fa-chalkboard" style="font-size: 1.5rem; color: #7ad0ff;"></i>
+        <span style="font-size: 1.35rem; font-weight: 700;">Zoom Online</span>
+      </div>
+      <p style="font-size: 0.98rem; font-weight: 600; margin-bottom: 12px;">Individual & Group · Recordings given</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
+        <span class="tag">A/L General English</span>
+        <span class="tag">O/L English</span>
+        <span class="tag">O/L Literature</span>
+      </div>
+      <div style="background: #112f40; padding: 16px; border-radius: 22px; border-left: 8px solid #4fc3ff;">
+        <p><i class="fas fa-circle-check" style="color: #6ef0f0;"></i> Free paper classes · Individual attention</p>
+        <p style="margin-top: 8px;"><i class="fas fa-circle-check"></i> Complete syllabus coverage · Finish in short time</p>
+      </div>
+    </div>
+
+    <div class="milestone-card">
+      <i class="fas fa-clock" style="font-size: 1.7rem; color: #8eeaff;"></i>
+      <p style="font-size: 1.25rem; font-weight: 700;">Finished O/L Lit in 3 months</p>
+      <p style="font-size: 0.92rem; margin-top: 6px;">My students face the exam on February 2026 – I covered the full syllabus for them within 3 months, even under tight deadlines.</p>
+    </div>
+
+    <div class="carousel-container">
+      <div class="carousel-header-row">
+        <div class="section-tabs">
+          <button class="section-tab active" data-tab="info"><i class="fas fa-circle-info"></i> class info</button>
+          <button class="section-tab" data-tab="videos"><i class="fas fa-video"></i> videos</button>
+          <button class="section-tab" data-tab="notes"><i class="fas fa-file-lines"></i> notes</button>
+        </div>
+        <div class="caro-dot-container">
+          <button class="caro-dot active" data-index="0"></button>
+          <button class="caro-dot" data-index="1"></button>
+          <button class="caro-dot" data-index="2"></button>
+        </div>
+      </div>
+
+      <div id="carouselSections">
+        <div class="section-card active" data-section="info">
+          <div class="highlight-class">
+            <p style="margin-bottom: 10px;"><i class="fa-regular fa-circle-check" style="color:#55dddd;"></i> <strong>Online Zoom classes · Recordings provided</strong></p>
+            
+            <!-- FIX 02 & 04: each class gets unique color and universal syllabus items added -->
+            <div class="class-item" data-class="ol-lit">
+              <div class="class-icon"><i class="fas fa-book"></i></div>
+              <div><strong>O/L Literature</strong><br><span style="font-size:0.85rem; color:#b8def5;">Poetry, prose, drama – novel, short stories, full syllabus</span></div>
+            </div>
+            <div class="class-item" data-class="ol-eng">
+              <div class="class-icon"><i class="fas fa-book-open"></i></div>
+              <div><strong>O/L English</strong><br><span style="font-size:0.85rem; color:#b8def5;">Language, comprehension, grammar, writing, past papers</span></div>
+            </div>
+            <div class="class-item" data-class="al-eng">
+              <div class="class-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div><strong>A/L General English</strong><br><span style="font-size:0.85rem; color:#b8def5;">Essay writing, unseen passages, grammar, vocabulary, paper discussions</span></div>
+            </div>
+
+            <!-- UNIVERSAL syllabus extras (below, but still inside same card) -->
+            <div class="class-universal-row">
+              <span class="univ-badge"><i class="fas fa-video"></i> Recordings provided</span>
+              <span class="univ-badge"><i class="fas fa-layer-group"></i> Full syllabus coverage</span>
+              <span class="univ-badge"><i class="fas fa-file-pdf"></i> Notes & model papers</span>
+              <span class="univ-badge"><i class="fas fa-clock"></i> Fast-track options</span>
+            </div>
+
+            <p style="margin-top: 14px;"><i class="fab fa-whatsapp" style="color:#25D366;"></i> tap WhatsApp button below to contact me</p>
+            <p style="margin-top: 8px;"><i class="fas fa-users"></i> Individual & Group classes available</p>
+          </div>
+        </div>
+        <div class="section-card" data-section="videos">
+          <div class="video-grid" id="videoGrid"></div>
+        </div>
+        <div class="section-card" data-section="notes">
+          <div class="notes-list">
+            <div class="note-item"><i class="fa-solid fa-file-pdf" style="color:#ff8a8a;"></i><span>O/L Lit - Poetry notes</span><a href="d1.pdf" download><i class="fa-solid fa-download"></i> PDF</a></div>
+            <div class="note-item"><i class="fa-solid fa-file-pdf" style="color:#ffb27f;"></i><span>O/L English - Tenses</span><a href="d2.pdf" download><i class="fa-solid fa-download"></i> PDF</a></div>
+            <div class="note-item"><i class="fa-solid fa-file-pdf" style="color:#a0d0ff;"></i><span>A/L General English - essays</span><a href="d3.pdf" download><i class="fa-solid fa-download"></i> PDF</a></div>
+            <div class="note-item"><i class="fa-solid fa-file-pdf" style="color:#c89eff;"></i><span>Literature - Model answers</span><a href="d4.pdf" download><i class="fa-solid fa-download"></i> PDF</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">M.G. Venuraka Bojith Ananda © 2026 All Rights Reserved</div>
+  </div>
+
+  <div class="wa-float-only">
+    <div class="wa-bubble" id="chatBubble"><span class="typewriter-text" id="typewriterSpan"></span></div>
+    <a id="waFloatLink" class="wa-button" href="https://wa.me/94724600493?text=Hello%20Venuraka%2C%20I'm%20interested%20in%20your%20English%20classes" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <div id="videoModal" class="modal"><span class="modal-close">&times;</span><div class="modal-container"><iframe id="modalIframe" allow="autoplay; fullscreen"></iframe></div></div>
+
+  <script>
+    (function() {
+      const videoData = [
+        { id:'zkNdHLGpVnk', views:'45', subject:'OL Lit' },
+        { id:'vmS18TFAjPQ', views:'52', subject:'OL Lit' },
+        { id:'OTfs_RaqcH4', views:'28', subject:'Essay' },
+        { id:'GoZQ0rsUaHg', views:'189', subject:'Tenses' }
+      ];
+
+      const grid = document.getElementById('videoGrid');
+      if (grid) {
+        let html = '';
+        videoData.forEach(v => {
+          html += `
+            <div class="video-item" data-src="https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1">
+              <div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/${v.id}" loading="lazy"></iframe></div>
+              <div class="vid-stats">
+                <button class="enlarge-btn"><i class="fas fa-expand"></i> enlarge</button>
+                <span style="display:flex; align-items:center; gap:5px;">
+                  <span class="views-count"><i class="fa-regular fa-eye"></i> ${v.views} views</span>
+                  <span class="category-badge">${v.subject}</span>
+                </span>
+              </div>
+            </div>
+          `;
+        });
+        grid.innerHTML = html;
+      }
+
+      const modal = document.getElementById('videoModal');
+      const modalIframe = document.getElementById('modalIframe');
+      const closeBtn = document.querySelector('.modal-close');
+      document.body.addEventListener('click', (e) => {
+        const card = e.target.closest('.video-item');
+        if (card) {
+          const src = card.dataset.src;
+          if (src) { modalIframe.src = src; modal.style.display = 'flex'; document.body.style.overflow = 'hidden'; }
+        }
+      });
+      closeBtn.addEventListener('click', () => { modal.style.display = 'none'; modalIframe.src = ''; document.body.style.overflow = 'auto'; });
+      window.addEventListener('click', (e) => { if (e.target === modal) { modal.style.display = 'none'; modalIframe.src = ''; document.body.style.overflow = 'auto'; } });
+
+      const sections = document.querySelectorAll('.section-card');
+      const dots = document.querySelectorAll('.caro-dot');
+      const tabs = document.querySelectorAll('.section-tab');
+      let curr = 0;
+      let interval;
+      let videoPlaying = false;
+
+      function showSection(index) {
+        sections.forEach((s,i) => s.classList.toggle('active', i===index));
+        dots.forEach((d,i) => d.classList.toggle('active', i===index));
+        tabs.forEach((t,i) => t.classList.toggle('active', i===index));
+        curr = index;
+      }
+      function nextSec() { if (!videoPlaying) showSection((curr+1)%sections.length); }
+      function startCar() { clearInterval(interval); interval = setInterval(nextSec, 7000); }
+      function pauseCar(ms=10000) { clearInterval(interval); setTimeout(() => { if (!videoPlaying) startCar(); }, ms); }
+
+      dots.forEach((dot, idx) => { dot.addEventListener('click', () => { showSection(idx); pauseCar(12000); }); });
+      tabs.forEach((tab, idx) => { tab.addEventListener('click', () => { showSection(idx); pauseCar(12000); }); });
+
+      document.querySelectorAll('iframe').forEach(ifr => {
+        ifr.addEventListener('mouseenter', () => { videoPlaying = true; pauseCar(12000); });
+        ifr.addEventListener('mouseleave', () => { setTimeout(() => { videoPlaying = false; }, 4000); });
+      });
+
+      showSection(0);
+      startCar();
+
+      // FIX 03: smooth typewriter – no 50fps flicker
+      const typeSpan = document.getElementById('typewriterSpan');
+      const text = "Register Now..";
+      let i = 0;
+      let isDeleting = false;
+      let timeout;
+      
+      function typeEffect() {
+        if (!isDeleting && i <= text.length) {
+          typeSpan.textContent = text.substring(0, i);
+          i++;
+          timeout = setTimeout(typeEffect, 140);
+        } else if (isDeleting && i >= 0) {
+          typeSpan.textContent = text.substring(0, i);
+          i--;
+          timeout = setTimeout(typeEffect, 80);
+        }
+        
+        if (!isDeleting && i === text.length + 1) {
+          isDeleting = true;
+          i = text.length;
+          clearTimeout(timeout);
+          setTimeout(typeEffect, 2000);
+        } else if (isDeleting && i === -1) {
+          isDeleting = false;
+          i = 0;
+          clearTimeout(timeout);
+          setTimeout(typeEffect, 500);
+        }
+      }
+      typeEffect();
+
+      // Force PDF downloads
+      document.querySelectorAll('.note-item a[download]').forEach(link => {
+        link.setAttribute('download', '');
+      });
+
+      // FIX 01: guarantee closing quote using pseudo-element, but also add visible span for older browsers
+      const bioSpan = document.querySelector('.bio-card span');
+      if (bioSpan && !bioSpan.innerHTML.includes('"')) {
+        // ensure visual quote at end without changing text size
+        let currentText = bioSpan.innerHTML;
+        if (!currentText.endsWith('"')) bioSpan.innerHTML = currentText + '"';
+      }
+    })();
+  </script>
+</body>
+</html>
