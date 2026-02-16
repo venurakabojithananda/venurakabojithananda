@@ -1,0 +1,55 @@
+# robots.txt for Venuraka Bojith Ananda English Classes
+# https://venurakabojithananda.github.io/
+
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://venurakabojithananda.github.io/sitemap.xml
+
+# Crawl delay for gentle crawling (be nice to servers)
+Crawl-delay: 1
+
+# Specific rules for different bots
+User-agent: Googlebot
+Allow: /
+Allow: /*.pdf$
+Allow: /*.jpg$
+Allow: /*.png$
+Disallow: /*?utm_  # Don't crawl UTM parameters
+
+User-agent: Googlebot-Image
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.gif$
+
+User-agent: Googlebot-Video
+Allow: /*youtube*
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Slurp  # Yahoo
+Allow: /
+Crawl-delay: 2
+
+User-agent: Baiduspider  # Chinese search engine
+Allow: /
+Crawl-delay: 2
+
+User-agent: Yandex  # Russian search engine
+Allow: /
+Crawl-delay: 2
+
+# Host directive (helps with canonical)
+Host: https://venurakabojithananda.github.io
+
+# Important paths that should be crawled
+Allow: /$
+Allow: /index.html$
+Allow: /me.jpg$
+Allow: /*.pdf$
+
+# Block nothing important - your site is fully public!
