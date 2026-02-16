@@ -55,14 +55,14 @@
     .container {
       max-width: 600px;
       margin: 0 auto;
-      padding: 5px 10px 20px; /* 5px top space added */
+      padding: 10px 10px 20px; /* 10px top space added */
       position: relative;
       z-index: 10;
     }
 
-    /* ----- GLASS CARDS – SMALLER PADDING ----- */
+    /* ----- GLASS CARDS – WITH EXTRA VERTICAL SPACE BETWEEN ----- */
     .card, .section-card, .bio-card, .milestone-card {
-      margin-bottom: 14px;
+      margin-bottom: 18px; /* increased vertical space between boxes */
     }
     .card, .section-card {
       background: rgba(5, 14, 24, 0.8);
@@ -442,7 +442,7 @@
     .class-item[data-class="al-eng"] .class-icon { color: #ff99cc; }
     .class-item[data-class="al-eng"] strong { color: #ffb6e0; }
 
-    /* NOTES – RESTORED TO ORIGINAL STYLE */
+    /* NOTES – RESTORED TO ORIGINAL STYLE (YOU CAN SET ICON COLORS) */
     .notes-list { display: flex; flex-direction: column; gap: 8px; }
     .note-item {
       background: #113949;
@@ -517,12 +517,13 @@
       pointer-events: none;
     }
     .views-count { font-size:0.75rem; display:inline-flex; align-items:center; gap:3px; }
-    .category-badge { background:#2a4a60; padding:2px 12px; border-radius:40px; font-size:0.65rem; }
+    /* category badge – you can set colors via style attribute */
+    .category-badge { padding:2px 12px; border-radius:40px; font-size:0.65rem; }
 
-    /* ----- WHATSAPP – SLOWER TYPEWRITER, BUBBLE DISAPPEARS ----- */
+    /* ----- WHATSAPP – LIFTED UP SLIGHTLY, MADE A TINY BIT BIGGER ----- */
     .wa-float-only {
       position: fixed;
-      bottom: 16px;
+      bottom: 24px; /* lifted up from 16px to 24px */
       right: 14px;
       z-index: 9999;
       display: flex;
@@ -534,10 +535,10 @@
       background: white;
       backdrop-filter: blur(12px);
       border-radius: 28px 28px 8px 28px;
-      padding: 6px 18px;
-      margin-bottom: 10px;
+      padding: 7px 20px; /* slightly bigger padding */
+      margin-bottom: 12px; /* more space */
       color: #0a1e28;
-      font-size: 0.85rem;
+      font-size: 0.9rem; /* slightly larger */
       font-weight: 700;
       box-shadow: 0 10px 24px rgba(0,0,0,0.5);
       pointer-events: none;
@@ -564,14 +565,14 @@
     @keyframes blink { 50% { opacity: 0; } }
     
     .wa-float-only .wa-button {
-      width: 56px;
-      height: 56px;
+      width: 60px; /* bigger from 56px */
+      height: 60px; /* bigger from 56px */
       background: #25D366;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 2.3rem;
+      font-size: 2.5rem; /* bigger */
       color: white;
       box-shadow: 0 6px 16px #075e54;
       pointer-events: auto;
@@ -580,7 +581,7 @@
       animation: float 3s infinite;
       line-height: 0;
     }
-    .wa-float-only .wa-button i { font-size: 2.3rem; }
+    .wa-float-only .wa-button i { font-size: 2.5rem; }
     
     /* ripple effect */
     .wa-button::before,
@@ -629,7 +630,7 @@
 
     /* all elements smaller on mobile */
     @media (max-width: 480px) {
-      .container { padding: 4px 8px 15px; }
+      .container { padding: 8px 8px 15px; }
       .card { padding: 12px 12px; }
       .name-section h1 { font-size: 1.3rem; }
       .bio-card { font-size: 0.82rem; padding: 12px 14px; }
@@ -752,18 +753,19 @@
           </div>
         </div>
 
-        <!-- VIDEOS – RESTORED TO ORIGINAL WITH ENLARGE BUTTON -->
+        <!-- VIDEOS – RESTORED TO ORIGINAL WITH ENLARGE BUTTON (YOU CAN SET CATEGORY COLORS) -->
         <div class="section-card" data-section="videos">
           <div class="video-grid" id="videoGrid"></div>
         </div>
 
-        <!-- NOTES – RESTORED TO ORIGINAL WITH PDF BUTTONS -->
+        <!-- NOTES – RESTORED TO ORIGINAL WITH PDF BUTTONS (YOU CAN SET ICON COLORS) -->
         <div class="section-card" data-section="notes">
           <div class="notes-list">
-            <div class="note-item"><i class="fa-solid fa-file-pdf" style="color:#ff8a8a;"></i><span>O/L Lit - Poetry notes</span><a href="d1.pdf" download><i class="fa-solid fa-download"></i> PDF</a></div>
-            <div class="note-item"><i class="fa-solid fa-file-pdf" style="color:#ffb27f;"></i><span>O/L English - Tenses</span><a href="d2.pdf" download><i class="fa-solid fa-download"></i> PDF</a></div>
-            <div class="note-item"><i class="fa-solid fa-file-pdf" style="color:#a0d0ff;"></i><span>A/L General English - essays</span><a href="d3.pdf" download><i class="fa-solid fa-download"></i> PDF</a></div>
-            <div class="note-item"><i class="fa-solid fa-file-pdf" style="color:#c89eff;"></i><span>Literature - Model answers</span><a href="d4.pdf" download><i class="fa-solid fa-download"></i> PDF</a></div>
+            <!-- you can change these color values -->
+            <div class="note-item"><i class="fa-solid fa-file-pdf" style="color:#ff6b6b;"></i><span>O/L Lit - Poetry notes</span><a href="d1.pdf" download><i class="fa-solid fa-download"></i> PDF</a></div>
+            <div class="note-item"><i class="fa-solid fa-file-pdf" style="color:#ffa07a;"></i><span>O/L English - Tenses</span><a href="d2.pdf" download><i class="fa-solid fa-download"></i> PDF</a></div>
+            <div class="note-item"><i class="fa-solid fa-file-pdf" style="color:#87cefa;"></i><span>A/L General English - essays</span><a href="d3.pdf" download><i class="fa-solid fa-download"></i> PDF</a></div>
+            <div class="note-item"><i class="fa-solid fa-file-pdf" style="color:#dda0dd;"></i><span>Literature - Model answers</span><a href="d4.pdf" download><i class="fa-solid fa-download"></i> PDF</a></div>
           </div>
         </div>
       </div>
@@ -772,7 +774,7 @@
     <div class="footer">M.G. Venuraka Bojith Ananda © 2026 All Rights Reserved</div>
   </div>
 
-  <!-- WHATSAPP FLOATING – SLOWER TYPEWRITER, BUBBLE DISAPPEARS -->
+  <!-- WHATSAPP FLOATING – LIFTED UP, SLIGHTLY BIGGER, SLOWER TYPEWRITER -->
   <div class="wa-float-only" id="waFloatContainer">
     <div class="wa-bubble" id="chatBubble"><span class="typewriter-text" id="typewriterSpan"></span></div>
     <a id="waFloatLink" class="wa-button" href="https://wa.me/94724600493?text=Hello%20sir%2C%20can%20I%20get%20more%20info%20about%20your%20english%20classes" target="_blank"><i class="fab fa-whatsapp"></i></a>
@@ -782,12 +784,12 @@
 
   <script>
     (function() {
-      // video data – RESTORED with enlarge button
+      // video data – RESTORED with enlarge button (you can set category badge colors)
       const videoData = [
-        { id:'zkNdHLGpVnk', views:'45', subject:'OL Lit' },
-        { id:'vmS18TFAjPQ', views:'52', subject:'OL Lit' },
-        { id:'OTfs_RaqcH4', views:'28', subject:'Essay' },
-        { id:'GoZQ0rsUaHg', views:'189', subject:'Tenses' }
+        { id:'zkNdHLGpVnk', views:'45', subject:'OL Lit', badgeColor: '#ff8a8a' },
+        { id:'vmS18TFAjPQ', views:'52', subject:'OL Lit', badgeColor: '#ffb27f' },
+        { id:'OTfs_RaqcH4', views:'28', subject:'Essay', badgeColor: '#a0d0ff' },
+        { id:'GoZQ0rsUaHg', views:'189', subject:'Tenses', badgeColor: '#c89eff' }
       ];
 
       const grid = document.getElementById('videoGrid');
@@ -801,7 +803,7 @@
                 <button class="enlarge-btn"><i class="fas fa-expand"></i> enlarge</button>
                 <span style="display:flex; align-items:center; gap:5px;">
                   <span class="views-count"><i class="fa-regular fa-eye"></i> ${v.views} views</span>
-                  <span class="category-badge">${v.subject}</span>
+                  <span class="category-badge" style="background: ${v.badgeColor};">${v.subject}</span>
                 </span>
               </div>
             </div>
